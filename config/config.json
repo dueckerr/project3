@@ -1,0 +1,30 @@
+{
+    "development": {
+      "username": "root",
+      "password": "Bascer!2",
+      "database": "pumptracker",
+      "host": "localhost",
+      "dialect": "mysql",
+      "define": {
+        "timestamps": false
+    },
+    "operatorsAliases": false
+  },
+    "test": {
+      "username": "root",
+      "password": null,
+      "database": "testdb",
+      "host": "localhost",
+      "dialect": "mysql",
+      "define": {
+      "timestamps": false
+      },
+    "operatorsAliases": false
+    },
+    "production": {
+      "use_env_variable": "JAWSDB_URL",
+      "dialect": "mysql"
+    },
+    "operatorsAliases": false
+  }
+  
