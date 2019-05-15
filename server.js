@@ -2,7 +2,9 @@
 var express = require("express");
 var sequelize = require("sequelize")
 var db = require("./models");
-var mysql2 = require ("mysql2")
+var mysql2 = require ("mysql2");
+const routes = require("./routes");
+
 
 var app = express();
 var PORT = process.env.PORT || 7000;
@@ -14,12 +16,7 @@ app.use(express.static("public"));
 
 
 // Routes
-// require("./routes/inventory-api-routes")(app);
-require("./routes/maintenance_logs-api-routes")(app);
-require("./routes/parts-api-routes")(app);
-require("./routes/fleets-api-routes")(app);
-require("./routes/company-api-routes")(app);
-// require("./routes/htmlRoutes")(app);
+app.use(routes);
 
 var syncOptions = { force: false };
 

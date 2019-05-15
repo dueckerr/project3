@@ -1,26 +1,16 @@
-var db = require("../models");
+// const router = require("express").Router();
+// const partsController = require("../controllers/partsController");
 
-module.exports = function(app) {
-  // Get all fleets
-  app.get("/api/fleets", function(req, res) {
-    db.fleets.findAll({}).then(function(dbfleets) {
-      res.json(dbfleets);
-    });
-  });
+// // Matches with "/api/books"
+// router.route("/")
+//   .get(partsController.findAll)
+//   .post(partsController.create);
 
-  // Create a new user
-  app.post("/api/fleets", function(req, res) {
-    db.fleets.create(req.body).then(function(dbfleets) {
-      res.json(dbfleets);
-    });
-  });
+// // Matches with "/api/books/:id"
+// // router
+//   // .route("/:id")
+//   // .get(partsController.findById)
+//   // .put(partsController.update)
+//   // .delete(partsController.remove);
 
-  // Delete user by id
-  app.delete("/api/user/:id", function(req, res) {
-    db.fleets
-      .destroy({ where: { id: req.params.id } })
-      .then(function(dbfleets) {
-        res.json(dbfleets);
-      });
-  });
-};
+// module.exports = router;

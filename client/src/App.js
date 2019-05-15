@@ -10,7 +10,7 @@ import axios from 'axios';
 
 class App extends Component {
   state = {
-    fleets: {}
+    MaintData: {}
   }
   componentDidMount () {
     this.setState({test:'testing'})     
@@ -19,9 +19,9 @@ class App extends Component {
   GetAllData = (event) => {
     let that = this;
     // use aws link 
-    axios.get("http://localhost:7000/api/fleets")
+    axios.get("http://localhost:7000/maintenance_logs")
     .then(function(response){
-      that.setState({fleets: response})
+      that.setState({MaintData: response})
     })
     .catch(function(err){
       console.log(err)

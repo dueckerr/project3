@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import Table from '@material-ui/core/Table';
@@ -7,7 +7,9 @@ import TableCell from '@material-ui/core/TableCell';
 import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
+import API from "../../utils/API";
 
+// import MaintAPI from './utils';
 const styles = theme => ({
   root: {
     width: '100%',
@@ -19,26 +21,27 @@ const styles = theme => ({
   },
 });
 
-let id = 0;
-function createData(name, calories, fat, carbs, protein) {
-  id += 1;
-  return { id, name, calories, fat, carbs, protein };
-}
+class MaintLogs extends Component {
+  state = {
+    logs: []
+  };
 
-const rows = [
-  createData('Frozen yoghurt', 159, 6.0, 24, 4.0),
-  createData('Ice cream sandwich', 237, 9.0, 37, 4.3),
-  createData('Eclair', 262, 16.0, 24, 6.0),
-  createData('Cupcake', 305, 3.7, 67, 4.3),
-  createData('Gingerbread', 356, 16.0, 49, 3.9),
-];
+  componentDidMount() {
+    this.loadLogs();
+  }
 
-function LogsTable(props) {
-  const { classes } = props;
 
-  return (
-    <Paper className={classes.root}>
-      <Table className={classes.table}>
+  loadLogs = () => {
+    API.getMaintLogs()
+    .then(res =>
+      this.setState({logs_id:'', strokes_range: '', unit_id: '', part:'', consumed:''})
+      )
+      .catch(err => console.log(err));
+  };
+    render() {
+    return (
+      <Paper>
+      <Table>
         <TableHead>
           <TableRow>
             <TableCell>ID</TableCell>
@@ -51,27 +54,27 @@ function LogsTable(props) {
           </TableRow>
         </TableHead>
         <TableBody>
-          {rows.map(row => (
-            <TableRow key={row.id}>
+        {this.state.logs.map(maintenance_logs =>
+            <TableRow key={maintenance_logs.logs_id}>
               <TableCell component="th" scope="row">
-                {row.name}
+              {maintenance_logs.logs_id}>
               </TableCell>
-              <TableCell align="right">{row.calories}</TableCell>
-              <TableCell align="right">{row.fat}</TableCell>
-              <TableCell align="right">{row.carbs}</TableCell>
-              <TableCell align="right">{row.protein}</TableCell>
-              <TableCell align="right">{row.protein}</TableCell>
-              <TableCell align="right">{row.protein}</TableCell>
+              <TableCell align="right">{maintenance_logs.logs_id}</TableCell>
+              <TableCell align="right">{maintenance_logs.strokes_range}</TableCell>
+              <TableCell align="right">{maintenance_logs.unit_id}</TableCell>
+              <TableCell align="right">{maintenance_logs.part}</TableCell>
+              <TableCell align="right">{maintenance_logs.consumed}</TableCell>
+              <TableCell align="right">{maintenance_logs.logs_id}</TableCell>
             </TableRow>
-          ))}
+          )}
         </TableBody>
       </Table>
     </Paper>
   );
 }
 
-LogsTable.propTypes = {
-  classes: PropTypes.object.isRequired,
+
+
 };
 
-export default withStyles(styles)(LogsTable);
+export default withStyles(styles)(MaintLogs);
