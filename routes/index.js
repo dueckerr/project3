@@ -15,7 +15,7 @@ const MaintLogsRoutes = require("./maintenance_logs-api-routes");
 // Fleets routes
 // router.use("/fleets-api-routes", fleetsRoutes);
 // Maintenance Logs routes
-router.use("/maintenance_logs", MaintLogsRoutes);
+router.use("/api/maintenance_logs", MaintLogsRoutes);
 
 
 module.exports = router;

@@ -8,26 +8,26 @@ import UOS from './pages/units_on-site';
 import PM from './pages/pump_maint';
 import axios from 'axios';
 
-class App extends Component {
-  state = {
-    MaintData: {}
-  }
-  componentDidMount () {
-    this.setState({test:'testing'})     
-    this.GetAllData()
-  }
-  GetAllData = (event) => {
-    let that = this;
-    // use aws link 
-    axios.get("http://localhost:7000/maintenance_logs")
-    .then(function(response){
-      that.setState({MaintData: response})
-    })
-    .catch(function(err){
-      console.log(err)
-    })
-  }
-  render () {
+// class App extends Component {
+//   state = {
+//     MaintData: {}
+//   }
+//   componentDidMount () {
+//     this.setState({test:'testing'})     
+//     this.GetAllData()
+//   }
+//   GetAllData = (event) => {
+//     let that = this;
+//     // use aws link 
+//     axios.get("http://localhost:7000/maintenance_logs")
+//     .then(function(response){
+//       that.setState({MaintData: response})
+//     })
+//     .catch(function(err){
+//       console.log(err)
+//     })
+//   }
+  function App () {
     return (
       <Router>
       <div>
@@ -42,7 +42,7 @@ class App extends Component {
       </div>
     </Router>
   );
-}
-}
+    }
+// }
 
 export default App;

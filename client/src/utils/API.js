@@ -3,7 +3,7 @@ import axios from "axios";
 export default {
   // get all maint logs
   getMaintLogs: function () {
-    return axios.get("/maintenance_logs")
+    return axios.get("/api/maintenance_logs")
   }
 }
 
