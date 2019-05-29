@@ -3,7 +3,8 @@ const MaintlogsController = require('../controllers/maintlogsController');
 
 router.route("/")
   .get(MaintlogsController.findAll)
-  // .post(MaintlogsController.post);
+  .post(MaintlogsController.post);
+
 
 // Matches with "/api/books/:id"
 // router

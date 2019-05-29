@@ -6,6 +6,7 @@ import Maintenance_Logs from "./pages/maintenance_logs";
 import Inventory from "./pages/inventory";
 import UOS from './pages/units_on-site';
 import PM from './pages/pump_maint';
+import addMaint from './pages/addMaint';
 import axios from 'axios';
 
 // class App extends Component {
@@ -38,6 +39,8 @@ import axios from 'axios';
           <Route exact path="/inventory" component={Inventory} />
           <Route exact path="/pump_maint" component={PM} />
           <Route exact path="/units_on-site" component={UOS} />
+          <Route exact path="/addMaint" component={addMaint} />
+
         </Switch>
       </div>
     </Router>

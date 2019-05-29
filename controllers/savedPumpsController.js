@@ -2,22 +2,16 @@ const db = require("../models");
 
 module.exports = {
     findAll: function(req, res) {
-        db.parts
+        db.savedPumps
             .findAll(req.query)
-            .then(dbparts => res.json(dbparts))
+            .then(dbsavedPumps => res.json(dbsavedPumps))
             .catch(err => res.status(422).json(err));
     },
     post: function(req, res) {
         console.log(req.body)
-        db.parts
+        db.savedPumps
             .create(req.body)
-            .then(dbparts => res.json(dbparts))
+            .then(dbsavedPumps => res.json(dbsavedPumps))
             .catch(err => res.status(422).json(err));
-    },
-    put: function (req, res) {
-        db.parts
-        .update(req.body)
-        .then(dbparts => res.json(dbparts))
-        .catch(err => res.status(422).json(err));
     }
 }

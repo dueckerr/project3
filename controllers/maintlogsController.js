@@ -6,12 +6,17 @@ module.exports = {
             .findAll(req.query)
             .then(dbmaintenance => res.json(dbmaintenance))
             .catch(err => res.status(422).json(err));
-    // },
-    // post: function(req, res) {
-    //     db.maintenance_logs
-    //         .create(req.body)
-    //         .then(dbmaintenance => res.json(dbmaintenance))
-    //         .catch(err => res.status(422).json(err));
+    },
+    post: function(req, res) {
+        console.log(req.body)
+        db.maintenance_logs
+            .create(req.body)
+            .then(dbmaintenance => res.json(dbmaintenance))
+            .catch(err => res.status(422).json(err));
+    },
+    findOne: function (req, res) {
+        db.maintenance_logs
+        .findOne({where: {DH1_valve = 1}})
     }
 }
 

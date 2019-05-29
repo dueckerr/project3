@@ -9,10 +9,6 @@ module.exports = function(sequelize, DataTypes) {
       unit_id: {
         type: DataTypes.STRING,
         allowNull: false
-      },
-      fleet_id: {
-        type: DataTypes.STRING,
-        allowNull: false
       }
     });
   

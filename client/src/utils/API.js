@@ -4,8 +4,16 @@ export default {
   // get all maint logs
   getMaintLogs: function () {
     return axios.get("/api/maintenance_logs")
+  },
+  // get all maint logs
+  GetParts: function () {
+    return axios.get("/api/parts")
+  },
+  GetPumps: function () {
+    return axios.get('/api/savedPumps')
   }
 }
+
 
 // export default {
 //   FleetData = (event) => {

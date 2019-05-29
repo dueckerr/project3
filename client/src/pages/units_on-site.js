@@ -1,10 +1,10 @@
 import React from "react";
-import InventoryTable from "../components/inventoryTable"
+import PumpDetails from "../components/PumpDetails"
 
  
 function UOS() {
   return (
- <InventoryTable />
+ <PumpDetails />
   );
 }
 

@@ -34,11 +34,12 @@ class MaintLogs extends Component {
   loadLogs = () => {
     API.getMaintLogs()
     .then(res =>
-      this.setState({logs_id:'', strokes_range: '', unit_id: '', part:'', consumed:''})
+      this.setState({logs:res.data})
       )
       .catch(err => console.log(err));
   };
-    render() {
+  
+  render() {
     return (
       <Paper>
       <Table>
@@ -54,7 +55,7 @@ class MaintLogs extends Component {
           </TableRow>
         </TableHead>
         <TableBody>
-        {this.state.logs.map(maintenance_logs =>
+        {this.state.logs && this.state.logs.map(maintenance_logs =>
             <TableRow key={maintenance_logs.logs_id}>
               <TableCell component="th" scope="row">
               {maintenance_logs.logs_id}>
