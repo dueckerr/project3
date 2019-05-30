@@ -14,10 +14,15 @@ module.exports = {
             .then(dbparts => res.json(dbparts))
             .catch(err => res.status(422).json(err));
     },
-    put: function (req, res) {
+    put: function(req, res) {
         db.parts
-        .update(req.body)
+        .update(
+            {stock: stock - req.body.stock}, {
+                where: {parts_id: req.body.parts_id}
+            })
         .then(dbparts => res.json(dbparts))
         .catch(err => res.status(422).json(err));
-    }
+        } 
 }
+
+  

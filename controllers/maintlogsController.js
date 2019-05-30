@@ -4,6 +4,13 @@ module.exports = {
     findAll: function(req, res) {
         db.maintenance_logs
             .findAll(req.query)
+            // .sort({ logs_id: -1 })
+            .then(dbmaintenance => res.json(dbmaintenance))
+            .catch(err => res.status(422).json(err));
+    },
+    findAllUnits: function(req, res){
+        db.maintenance_logs
+            .findAll({ where:  { unit_id: req.params.unit_id } })
             .then(dbmaintenance => res.json(dbmaintenance))
             .catch(err => res.status(422).json(err));
     },
@@ -14,9 +21,11 @@ module.exports = {
             .then(dbmaintenance => res.json(dbmaintenance))
             .catch(err => res.status(422).json(err));
     },
-    findOne: function (req, res) {
+    remove: function(req, res) {
         db.maintenance_logs
-        .findOne({where: {DH1_valve = 1}})
+            .destroy({ where: { logs_id: req.params.logs_id } })
+            .then(dbmaintenance => res.json(dbmaintenance))
+            .catch(err => res.status(422).json(err));
     }
 }
 

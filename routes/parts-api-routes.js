@@ -5,12 +5,18 @@ const partsController = require("../controllers/partsController");
 router.route("/")
   .get(partsController.findAll)
   .post(partsController.post)
+
+  router.route("/edit")
+  .put(partsController.put)
+  .get(partsController.findAll)
+
+  // .put(partsController.update)
   
 
 // // Matches with "/api/books/:id"
 // // router
 //   // .route("/:id")
-//   // .get(partsController.findById)
+//   // .get(partsController.findById)s
 //   // .put(partsController.update)
 //   // .delete(partsController.remove);
 

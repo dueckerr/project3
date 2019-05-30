@@ -1,10 +1,15 @@
 import React from "react";
 import InventoryTable from "../components/inventoryTable"
+import AddParts from "../components/AddParts";
 
  
 function Inventory() {
   return (
- <InventoryTable />
+    <div>
+      <InventoryTable />
+      <br></br>
+      <AddParts/>
+    </div>
   );
 }
 

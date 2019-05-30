@@ -5,65 +5,20 @@ export default {
   getMaintLogs: function () {
     return axios.get("/api/maintenance_logs")
   },
+  getMaintLogsPerUnit: function (unit_id) {
+    return axios.get("/api/maintenance_logs/" + unit_id)
+  },
+  addMaintLog: function () {
+    return axios.post("/api/maintenance_logs")
+  },
   // get all maint logs
   GetParts: function () {
     return axios.get("/api/parts")
   },
   GetPumps: function () {
     return axios.get('/api/savedPumps')
+  },
+  EditStock: function () {
+    return axios.put('/api/parts/edit')
   }
 }
-
-
-// export default {
-//   FleetData = (event) => {
-//     let that = this;
-//     // use aws link 
-//     axios.get("http://localhost:7000/api/fleets")
-//     .then(function(response){
-//       that.setState({fleets: response})
-//     })
-//     .catch(function(err){
-//       console.log(err)
-//     })
-//   }
-  
-  
-//   MaintLogsData = (event) => {
-//     let that = this;
-//     // use aws link 
-//     axios.get("http://localhost:7000/api/maintenance_logs")
-//     .then(function(response){
-//       that.setState({maintLogs: response})
-//     })
-//     .catch(function(err){
-//       console.log(err)
-//     })
-//   }
-
-
-// PartsData = (event) => {
-//     let that = this;
-//     // use aws link 
-//     axios.get("http://localhost:7000/api/fleets")
-//     .then(function(response){
-//       that.setState({fleets: response})
-//     })
-//     .catch(function(err){
-//       console.log(err)
-//     })
-//   }
-
-
-
-// MaintData = (event) => {
-//     let that = this;
-//     // use aws link 
-//     axios.get("http://localhost:7000/api/fleets")
-//     .then(function(response){
-//       that.setState({fleets: response})
-//     })
-//     .catch(function(err){
-//       console.log(err)
-//     })
-//   }

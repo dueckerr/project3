@@ -59,6 +59,8 @@ class GetParts extends Component {
         </TableBody>
       </Table>
     </Paper>
+
+    
   );
 }
 
