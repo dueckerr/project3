@@ -377,8 +377,66 @@ class addMaint extends React.Component {
 //   };
     handleSubmit = (e) => {
         e.preventDefault()
+        API.addMaintLog({
+            unit_id: this.state.unit_id,
+            stroke_range: this.state.stroke_range,
+            valve_used: this.state.valve_used,
+            seat_used: this.state.seat_used,
+            DRing_used: this.state.DRing_used,
+            packing_used: this.state.packing_used,
+            plunger_used: this.state.plunger_used,
+            //discharge valve
+            DH1_valve: this.state.DH1_valve,
+            DH2_valve: this.state.DH2_valve,
+            DH3_valve: this.state.DH3_valve,
+            DH4_valve: this.state.DH4_valve,
+            DH5_valve: this.state.DH5_valve,
+            //discharge seat
+            DH1_seat: this.state.DH1_seat,
+            DH2_seat: this.state.DH2_seat,
+            DH3_seat: this.state.DH3_seat,
+            DH4_seat: this.state.DH4_seat,
+            DH5_seat: this.state.DH5_seat,
+            //discharge DRing
+            DH1_DRing: this.state.DH1_DRing,
+            DH2_DRing: this.state.DH2_DRing,
+            DH3_DRing: this.state.DH3_DRing,
+            DH4_DRing: this.state.DH4_DRing,
+            DH5_DRing: this.state.DH5_DRing,
+            //suciton valve
+            SH1_valve: this.state.SH1_valve,
+            SH2_valve: this.state.SH2_valve,
+            SH3_valve: this.state.SH3_valve,
+            SH4_valve: this.state.SH4_valve,
+            SH5_valve: this.state.SH5_valve,
+            //suction seat
+            SH1_seat: this.state.SH1_seat,
+            SH2_seat: this.state.SH2_seat,
+            SH3_seat: this.state.SH3_seat,
+            SH4_seat: this.state.SH4_seat,
+            SH5_seat: this.state.SH5_seat,
+            //suction DRing
+            SH1_DRing: this.state.SH1_DRing,
+            SH2_DRing: this.state.SH2_DRing,
+            SH3_DRing: this.state.SH3_DRing,
+            SH4_DRing: this.state.SH4_DRing,
+            SH5_DRing: this.state.SH5_DRing,
+            //packing
+            SH1_packing: this.state.SH1_packing,
+            SH2_packing: this.state.SH2_packing,
+            SH3_packing: this.state.SH3_packing,
+            SH4_packing: this.state.SH4_packing,
+            SH5_packing: this.state.SH5_packing,
+            // plungers
+            SH1_plunger: this.state.SH1_plunger,
+            SH2_plunger: this.state.SH2_plunger,
+            SH3_plunger: this.state.SH3_plunger,
+            SH4_plunger: this.state.SH4_plunger,
+            SH5_plunger: this.state.SH5_plunger
+        
+        })
         console.log(this.state)
-        axios.post('http://localhost:7000/api/maintenance_logs', this.state)
+        // axios.post('http://localhost:7000/api/maintenance_logs', this.state)
         // axios.put('http://localhost:7000/api/parts', this.state)
     }
     render()

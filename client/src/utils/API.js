@@ -8,8 +8,8 @@ export default {
   getMaintLogsPerUnit: function (unit_id) {
     return axios.get("/api/maintenance_logs/" + unit_id)
   },
-  addMaintLog: function () {
-    return axios.post("/api/maintenance_logs")
+  addMaintLog: function (data) {
+    return axios.post("/api/maintenance_logs/", data)
   },
   // get all maint logs
   GetParts: function () {
@@ -18,7 +18,7 @@ export default {
   GetPumps: function () {
     return axios.get('/api/savedPumps')
   },
-  EditStock: function () {
-    return axios.put('/api/parts/edit')
+  EditStock: function (data) {
+    return axios.put('/api/parts/edit', data)
   }
 }

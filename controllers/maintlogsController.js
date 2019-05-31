@@ -14,7 +14,7 @@ module.exports = {
             .then(dbmaintenance => res.json(dbmaintenance))
             .catch(err => res.status(422).json(err));
     },
-    post: function(req, res) {
+    create: function(req, res) {
         console.log(req.body)
         db.maintenance_logs
             .create(req.body)

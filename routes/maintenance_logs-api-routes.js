@@ -3,7 +3,7 @@ const MaintlogsController = require('../controllers/maintlogsController');
 
 router.route("/")
   .get(MaintlogsController.findAll)
-  .post(MaintlogsController.post)
+  .post(MaintlogsController.create)
 
   router.route("/unit_id:unit_id")
   .get(MaintlogsController.findAllUnits) 
