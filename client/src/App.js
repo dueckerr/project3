@@ -43,8 +43,6 @@ import axios from 'axios';
           <Route exact path="/units_on-site" component={UOS} />
           <Route exact path="/addMaint" component={addMaintlog} />
           <Route exact path="/testpage" component={AddMaint} />
-
-
         </Switch>
       </div>
     </Router>
