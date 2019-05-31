@@ -18,5 +18,8 @@ router.use("/api/parts", partsRoutes);
 // Maintenance Logs routes
 router.use("/api/maintenance_logs", MaintLogsRoutes);
 
+router.use(function(req, res) {
+    res.sendFile(path.join(__dirname, "../client/build/index.html"));
+  });
 
 module.exports = router;
