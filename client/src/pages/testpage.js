@@ -321,8 +321,7 @@ render() {
         <form onSubmit = {this.handleSubmit}>
         <input type = 'Text' placeholder = 'Unit ID' onChange = {this.handleUnitIdChange} />
         <input type = 'Text' placeholder = 'Pump Strokes' onChange = {this.handlepumpStrokesChange} /> 
-            <ValveMaint/>
-            {/* handleSubmit={this.ha} */}
+            <ValveMaint onSubmit={this.handleSubmit}/>
             <SeatMaint/>
             <DRingMaint/>
             <PackingMaint/>

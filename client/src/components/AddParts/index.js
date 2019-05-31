@@ -32,22 +32,22 @@ class AddParts extends Component {
 
     render () {
         return (
-            <form>
+            <form onSubmit = {this.handleSubmit}>
                 <label>
                 Valves:  -
-                <input type="number" name="name" onChange = {this.handleDH1_seatChange}/>
+                <input type="number" name="name" onChange = {this.handleValveChange}/>
                 <br/>
                 Seats:   -
-                <input type="number" name="name" onChange = {this.handleDH1_seatChange} />
+                <input type="number" name="name" onChange = {this.handleValveChange} />
                 <br/>
                 D-Rings: -
-                <input type="number" name="name" onChange = {this.handleDH1_seatChange} />
+                <input type="number" name="name" onChange = {this.handleValveChange} />
                 <br/>
                 Packing: -
-                <input type="number" name="name" onChange = {this.handleDH1_seatChange} />
+                <input type="number" name="name" onChange = {this.handleValveChange} />
                 <br/>
                 Plungers: -
-                <input type="number" name="name" />
+                <input type="number" name="name" onChange = {this.handleValveChange}/>
                 <br/>
                 </label>
                 <br/>
