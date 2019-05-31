@@ -26,6 +26,12 @@ class PumpDetails extends Component {
     logs: [],
     pumps: [],
   };
+
+  findLastMaint = () => {
+
+  }
+
+
   // //discharge valve
   // DH1_valve: '',
   // DH2_valve: '',
@@ -83,10 +89,12 @@ class PumpDetails extends Component {
   loadSavedPumps = () => {
     API.GetPumps()
     .then(res =>
-      this.setState({pumps:res.data})
+      this.setState({pumps:res.data, unit_id: ''})
       )
       .catch(err => console.log(err));
   };
+
+
 
   loadLogs = () => {
     API.getMaintLogs()
