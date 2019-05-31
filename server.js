@@ -4,6 +4,7 @@ var sequelize = require("sequelize")
 var db = require("./models");
 var mysql2 = require ("mysql2");
 const routes = require("./routes");
+const path = require("path");
 
 
 var app = express();
