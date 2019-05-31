@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './App.css';
 import TopNav from "./components/Nav";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
@@ -37,19 +37,17 @@ import axios from 'axios';
         <h1>FIM Solutions</h1>
         <TopNav />
         <Switch>
+          <Route exact path="/" component={Maintenance_Logs} />
           <Route exact path="/maintenance_logs" component={Maintenance_Logs} />
           <Route exact path="/inventory" component={Inventory} />
           <Route exact path="/pump_maint" component={PM} />
           <Route exact path="/units_on-site" component={UOS} />
           <Route exact path="/addMaint" component={addMaintlog} />
           <Route exact path="/testpage" component={AddMaint} />
-
-
         </Switch>
       </div>
     </Router>
-  );
-    }
-// }
+    );
+  }
 
 export default App;
