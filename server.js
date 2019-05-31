@@ -13,8 +13,10 @@ var PORT = process.env.PORT || 7000;
 // Middleware
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-app.use(express.static("public"));
-
+// Serve up static assets (usually on heroku)
+if (process.env.NODE_ENV === "production") {
+  app.use(express.static("client/build"));
+}
 // Routes
 app.use(routes);
 
@@ -29,7 +31,7 @@ if (process.env.NODE_ENV === "test") {
 // request to the React app
 // define any API routes
 app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "./client/public/index.html"));
+  res.sendFile(path.join(__dirname, "./client/build/index.html"));
 });
 
 
