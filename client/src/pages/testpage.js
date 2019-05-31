@@ -16,55 +16,8 @@ class addMaintLog extends React.Component {
         seat_used: 0,
         DRing_used: 0,
         packing_used: 0,
-        plunger_used: 0,
-        //discharge valve
-        DH1_valve: false,
-        DH2_valve: false,
-        DH3_valve: false,
-        DH4_valve: false,
-        DH5_valve: false,
-        //discharge seat
-        DH1_seat: false,
-        DH2_seat: false,
-        DH3_seat: false,
-        DH4_seat: false,
-        DH5_seat: false,
-        //discharge DRing
-        DH1_DRing: false,
-        DH2_DRing: false,
-        DH3_DRing: false,
-        DH4_DRing: false,
-        DH5_DRing: false,
-        //suciton valve
-        SH1_valve: false,
-        SH2_valve: false,
-        SH3_valve: false,
-        SH4_valve: false,
-        SH5_valve: false,
-        //suction seat
-        SH1_seat: false,
-        SH2_seat: false,
-        SH3_seat: false,
-        SH4_seat: false,
-        SH5_seat: false,
-        //suction DRing
-        SH1_DRing: false,
-        SH2_DRing: false,
-        SH3_DRing: false,
-        SH4_DRing: false,
-        SH5_DRing: false,
-        //packing
-        SH1_packing: false,
-        SH2_packing: false,
-        SH3_packing: false,
-        SH4_packing: false,
-        SH5_packing: false,
-        // plungers
-        SH1_plunger: false,
-        SH2_plunger: false,
-        SH3_plunger: false,
-        SH4_plunger: false,
-        SH5_plunger: false
+        plunger_used: 0
+       
     }
 
     handleUnitIdChange = (e) => {
@@ -369,6 +322,7 @@ render() {
         <input type = 'Text' placeholder = 'Unit ID' onChange = {this.handleUnitIdChange} />
         <input type = 'Text' placeholder = 'Pump Strokes' onChange = {this.handlepumpStrokesChange} /> 
             <ValveMaint/>
+            {/* handleSubmit={this.ha} */}
             <SeatMaint/>
             <DRingMaint/>
             <PackingMaint/>

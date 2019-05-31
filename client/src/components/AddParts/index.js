@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 // import axios from 'axios';
-// import API from "../utils/API";
+import API from "../../utils/API";
 
 class AddParts extends Component {
     
@@ -13,28 +13,44 @@ class AddParts extends Component {
         Plunger: 0
     }
 
+    handleValveChange = (e)  => {
+        this.setState({Valve:this.state.Valve})
+    }
 
-
-    // handleFormSubmit = event => {
-    //     event.preventDefault();
-    //     if (this.state.title && this.state.author) {
-    //       API.saveBook({
-    //         title: this.state.title,
-    //         author: this.state.author,
-    //         synopsis: this.state.synopsis
-    //       })
-    //         .then(res => this.loadBooks())
-    //         .catch(err => console.log(err));
-    //     }
-    //   };
+    handleFormSubmit = (e) => {
+        (e).preventDefault();
+        console.log(this.state)
+        //   API.EditStock({
+        //     Valve: this.state.Valve,
+        //     Seat: this.state.Seat,
+        //     DRing: this.state.DRing
+        //   })
+        //     .then(res => this.loadBooks())
+        //     .catch(err => console.log(err));
+        
+      };
 
     render () {
         return (
             <form>
                 <label>
-                Name:
-                <input type="text" name="name" />
+                Valves:  -
+                <input type="number" name="name" onChange = {this.handleDH1_seatChange}/>
+                <br/>
+                Seats:   -
+                <input type="number" name="name" onChange = {this.handleDH1_seatChange} />
+                <br/>
+                D-Rings: -
+                <input type="number" name="name" onChange = {this.handleDH1_seatChange} />
+                <br/>
+                Packing: -
+                <input type="number" name="name" onChange = {this.handleDH1_seatChange} />
+                <br/>
+                Plungers: -
+                <input type="number" name="name" />
+                <br/>
                 </label>
+                <br/>
                 <input type="submit" value="Submit" />
             </form>
         )

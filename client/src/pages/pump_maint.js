@@ -1,12 +1,12 @@
 import React from "react";
-import InventoryTable from "../components/inventoryTable"
+import PumpDetails from "../components/PumpDetails"
 
  
-function PM() {
+function UOS() {
   return (
- <InventoryTable />
+ <PumpDetails />
   );
 }
 
 
-export default PM;
+export default UOS;

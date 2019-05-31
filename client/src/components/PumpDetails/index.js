@@ -201,7 +201,7 @@ class PumpDetails extends Component {
           <Table>
             <TableHead>
               <TableRow>
-              <TableCell>ID</TableCell>
+              <TableCell> Unit Number</TableCell>
                 <TableCell align="right">Parts</TableCell>
                 <TableCell align="right">Hole 1</TableCell>
                 <TableCell align="right">Hole 2</TableCell>
@@ -212,6 +212,7 @@ class PumpDetails extends Component {
             </TableHead>
             <TableBody>
                 <TableRow>
+                <TableCell></TableCell>
                 <TableCell align='right'>Discharge Valves</TableCell>
                 <TableCell align="right">9000</TableCell>
                 <TableCell align="right">1000</TableCell>
@@ -220,6 +221,7 @@ class PumpDetails extends Component {
                 <TableCell align="right">1000</TableCell>
                 </TableRow>
                 <TableRow>
+                <TableCell></TableCell>
                 <TableCell align='right'>Discharge Seats</TableCell>
                 <TableCell align="right">1000</TableCell>
                 <TableCell align="right">1000</TableCell>
@@ -228,6 +230,7 @@ class PumpDetails extends Component {
                 <TableCell align="right">1000</TableCell>
                 </TableRow>
                 <TableRow >
+                <TableCell></TableCell>
                 <TableCell align='right'>Discharge D-Ring</TableCell>
                 <TableCell align="right">1000</TableCell>
                 <TableCell align="right">1000</TableCell>
@@ -236,6 +239,7 @@ class PumpDetails extends Component {
                 <TableCell align="right">1000</TableCell>
                 </TableRow>
                 <TableRow >
+                <TableCell></TableCell>
                 <TableCell align='right'>Suction Valves</TableCell>
                 <TableCell align="right">1000</TableCell>
                 <TableCell align="right">1000</TableCell>
@@ -244,6 +248,7 @@ class PumpDetails extends Component {
                 <TableCell align="right">1000</TableCell>
                 </TableRow >
                 <TableRow >
+                <TableCell></TableCell>
                 <TableCell align='right'>Suction Seats</TableCell>
                 <TableCell align="right">1000</TableCell>
                 <TableCell align="right">1000</TableCell>
@@ -252,6 +257,7 @@ class PumpDetails extends Component {
                 <TableCell align="right">1000</TableCell>
                 </TableRow>
                 <TableRow >
+                <TableCell></TableCell>
                 <TableCell align='right'>Suction D-Ring</TableCell>
                 <TableCell align="right">1000</TableCell>
                 <TableCell align="right">1000</TableCell>
@@ -260,6 +266,7 @@ class PumpDetails extends Component {
                 <TableCell align="right">1000</TableCell>
                 </TableRow >
                 <TableRow >
+                <TableCell></TableCell>
                 <TableCell align='right'>Plunger</TableCell>
                 <TableCell align="right">1000</TableCell>
                 <TableCell align="right">1000</TableCell>
@@ -268,6 +275,7 @@ class PumpDetails extends Component {
                 <TableCell align="right">1000</TableCell>
                 </TableRow>
                 <TableRow >
+                <TableCell></TableCell>
                 <TableCell align='right'>Packing</TableCell>
                 <TableCell align="right">1000</TableCell>
                 <TableCell align="right">1000</TableCell>
