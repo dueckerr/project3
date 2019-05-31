@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import './App.css';
-import TopNav from "./components/Nav";
+import TopNav from "./src/components/Nav";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Maintenance_Logs from "./pages/maintenance_logs";
-import Inventory from "./pages/inventory";
-import UOS from './pages/units_on-site';
-import PM from './pages/pump_maint';
-import addMaintlog from './pages/addMaint';
-import AddMaint from './pages/testpage';
+import Maintenance_Logs from "./src/pages/maintenance_logs";
+import Inventory from "./src/pages/inventory";
+import UOS from './src/pages/units_on-site';
+import PM from './src/pages/pump_maint';
+import addMaintlog from './src/pages/addMaint';
+import AddMaint from './src/pages/testpage';
 
 import axios from 'axios';
 
