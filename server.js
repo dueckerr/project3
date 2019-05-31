@@ -17,15 +17,10 @@ app.use(express.json());
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
 }
-
-app.use(function(req, res) {
-  res.sendFile(path.join(__dirname, "../client/build/index.html"));
-});
-
 // Routes
 app.use(routes);
 
-var syncOptions = { force: false };
+var syncOptions = { force: true };
 
 // If running a test, set syncOptions.force to true
 // clearing the `testdb`
@@ -35,6 +30,10 @@ var syncOptions = { force: false };
 
 // request to the React app
 // define any API routes
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, 'client/build', 'index.html'));
+});
+
 
 
 // Starting the server, syncing our models ------------------------------------/

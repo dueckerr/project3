@@ -8,9 +8,10 @@ class Inventory extends Component {
   state = {
       //parts
       parts:[],
-      valve: "",
-      seat: '',
-      plunger: ''
+      valve: 50,
+      seat: 0,
+      plunger: 0,
+      DRing: 0,
 
   }
 
@@ -22,18 +23,25 @@ class Inventory extends Component {
   loadparts = () => {
     API.GetParts()
     .then(res =>
-      this.setState({parts:res.data, valve: '', seat: '', plunger:''})
+      this.setState({parts:res.data})
       )
       .catch(err => console.log(err));
   };
 
-  handleValveChange = (e)  => {
-      this.setState({Valve:this.state.Valve})
+  setStock = () => {
+    API.EditStock()
+    .then(res =>
+      this.setState)
+  }
+
+  handleValveUpdate = () => {
+    this.setState({valve: this.state.valve })
   }
 
   handleFormSubmit = (e) => {
       (e).preventDefault();
       console.log(this.state)
+
       //   API.EditStock({
       //     Valve: this.state.Valve,
       //     Seat: this.state.Seat,
@@ -49,22 +57,22 @@ class Inventory extends Component {
     <div>
       <InventoryTable />
       <br></br>
-      <form onSubmit = {this.handleSubmit}>
+      <form onSubmit = {this.handleFormSubmit}>
                 <label>
                 Valves:  -
-                <input type="number" name="name" onChange = {this.handleValveChange}/>
+                <input type="number" name="name" onChange = {this.handleValveUpdate}/>
                 <br/>
-                Seats:   -
-                <input type="number" name="name" onChange = {this.handleValveChange} />
+                {/* Seats:   -
+                <input type="number" name="name" onChange = {this.setState.seat} />
                 <br/>
                 D-Rings: -
-                <input type="number" name="name" onChange = {this.handleValveChange} />
+                <input type="number" name="name" onChange = {this.setState.plunger} />
                 <br/>
                 Packing: -
-                <input type="number" name="name" onChange = {this.handleValveChange} />
+                <input type="number" name="name" onChange = {this.setState.DRing} />
                 <br/>
                 Plungers: -
-                <input type="number" name="name" onChange = {this.handleValveChange}/>
+                <input type="number" name="name" onChange = {this.setState.packing}/> */}
                 <br/>
                 </label>
                 <br/>
