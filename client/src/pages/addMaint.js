@@ -13,7 +13,7 @@ class addMaint extends React.Component {
         stroke_range: '',
         valve_used: 0,
         seat_used: 0,
-        DRing_used: 0,
+        Seal_used: 0,
         packing_used: 0,
         plunger_used: 0,
         //discharge valve
@@ -28,12 +28,12 @@ class addMaint extends React.Component {
         DH3_seat: false,
         DH4_seat: false,
         DH5_seat: false,
-        //discharge DRing
-        DH1_DRing: false,
-        DH2_DRing: false,
-        DH3_DRing: false,
-        DH4_DRing: false,
-        DH5_DRing: false,
+        //discharge Seal
+        DH1_Seal: false,
+        DH2_Seal: false,
+        DH3_Seal: false,
+        DH4_Seal: false,
+        DH5_Seal: false,
         //suciton valve
         SH1_valve: false,
         SH2_valve: false,
@@ -46,12 +46,12 @@ class addMaint extends React.Component {
         SH3_seat: false,
         SH4_seat: false,
         SH5_seat: false,
-        //suction DRing
-        SH1_DRing: false,
-        SH2_DRing: false,
-        SH3_DRing: false,
-        SH4_DRing: false,
-        SH5_DRing: false,
+        //suction Seal
+        SH1_Seal: false,
+        SH2_Seal: false,
+        SH3_Seal: false,
+        SH4_Seal: false,
+        SH5_Seal: false,
         //packing
         SH1_packing: false,
         SH2_packing: false,
@@ -147,38 +147,38 @@ class addMaint extends React.Component {
             seat_used: prevState.seat_used + 1
         })); 
     }
-    // discharge DRing    // discharge DRing
-    // discharge DRing
-    // discharge DRing
+    // discharge Seal    // discharge Seal
+    // discharge Seal
+    // discharge Seal
 
-    handleDH1_DRingChange = (e) => {
-        this.setState({ DH1_DRing: true })
+    handleDH1_SealChange = (e) => {
+        this.setState({ DH1_Seal: true })
         this.setState((prevState, props) => ({
-            DRing_used: prevState.DRing_used + 1
+            Seal_used: prevState.Seal_used + 1
         })); 
     }
-    handleDH2_DRingChange = (e) => {
-        this.setState({ DH2_DRing: true })
+    handleDH2_SealChange = (e) => {
+        this.setState({ DH2_Seal: true })
         this.setState((prevState, props) => ({
-            DRing_used: prevState.DRing_used + 1
+            Seal_used: prevState.Seal_used + 1
         })); 
     }
-    handleDH3_DRingChange = (e) => {
-        this.setState({ DH3_DRing: true })
+    handleDH3_SealChange = (e) => {
+        this.setState({ DH3_Seal: true })
         this.setState((prevState, props) => ({
-            DRing_used: prevState.DRing_used + 1
+            Seal_used: prevState.Seal_used + 1
         })); 
     }
-    handleDH4_DRingChange = (e) => {
-        this.setState({ DH4_DRing: true })
+    handleDH4_SealChange = (e) => {
+        this.setState({ DH4_Seal: true })
         this.setState((prevState, props) => ({
-            DRing_used: prevState.DRing_used + 1
+            Seal_used: prevState.Seal_used + 1
         })); 
     }
-    handleDH5_DRingChange = (e) => {
-        this.setState({ DH5_DRing: true })
+    handleDH5_SealChange = (e) => {
+        this.setState({ DH5_Seal: true })
         this.setState((prevState, props) => ({
-            DRing_used: prevState.DRing_used + 1
+            Seal_used: prevState.Seal_used + 1
         })); 
     }
     // suction valve
@@ -250,38 +250,38 @@ class addMaint extends React.Component {
         })); 
     }
 
-    // suction DRing
-    // suction DRing
-    // suction DRing
+    // suction Seal
+    // suction Seal
+    // suction Seal
 
-    handleSH1_DRingChange = (e) => {
-        this.setState({ SH1_DRing: true })
+    handleSH1_SealChange = (e) => {
+        this.setState({ SH1_Seal: true })
         this.setState((prevState, props) => ({
-            DRing_used: prevState.DRing_used + 1
+            Seal_used: prevState.Seal_used + 1
         })); 
     }
-    handleSH2_DRingChange = (e) => {
-        this.setState({ SH2_DRing: true })
+    handleSH2_SealChange = (e) => {
+        this.setState({ SH2_Seal: true })
         this.setState((prevState, props) => ({
-            DRing_used: prevState.DRing_used + 1
+            Seal_used: prevState.Seal_used + 1
         })); 
     }
-    handleSH3_DRingChange = (e) => {
-        this.setState({ SH3_DRing: true })
+    handleSH3_SealChange = (e) => {
+        this.setState({ SH3_Seal: true })
         this.setState((prevState, props) => ({
-            DRing_used: prevState.DRing_used + 1
+            Seal_used: prevState.Seal_used + 1
         })); 
     }
-    handleSH4_DRingChange = (e) => {
-        this.setState({ SH4_DRing: true })
+    handleSH4_SealChange = (e) => {
+        this.setState({ SH4_Seal: true })
         this.setState((prevState, props) => ({
-            DRing_used: prevState.DRing_used + 1
+            Seal_used: prevState.Seal_used + 1
         })); 
     }
-    handleSH5_DRingChange = (e) => {
-        this.setState({ SH5_DRing: true })
+    handleSH5_SealChange = (e) => {
+        this.setState({ SH5_Seal: true })
         this.setState((prevState, props) => ({
-            DRing_used: prevState.DRing_used + 1
+            Seal_used: prevState.Seal_used + 1
         })); 
     }
     // packing
@@ -366,7 +366,7 @@ class addMaint extends React.Component {
     //     }
     //     console.log(this.state.plunger_used)
     //     console.log(this.state.valve_used)
-    //     console.log(this.state.DRing_used)
+    //     console.log(this.state.Seal_used)
     //     console.log(this.state.seat_used)
     //     console.log(this.state.packing_used)
     // }
@@ -383,7 +383,7 @@ class addMaint extends React.Component {
             stroke_range: this.state.stroke_range,
             valve_used: this.state.valve_used,
             seat_used: this.state.seat_used,
-            DRing_used: this.state.DRing_used,
+            Seal_used: this.state.Seal_used,
             packing_used: this.state.packing_used,
             plunger_used: this.state.plunger_used,
             //discharge valve
@@ -398,12 +398,12 @@ class addMaint extends React.Component {
             DH3_seat: this.state.DH3_seat,
             DH4_seat: this.state.DH4_seat,
             DH5_seat: this.state.DH5_seat,
-            //discharge DRing
-            DH1_DRing: this.state.DH1_DRing,
-            DH2_DRing: this.state.DH2_DRing,
-            DH3_DRing: this.state.DH3_DRing,
-            DH4_DRing: this.state.DH4_DRing,
-            DH5_DRing: this.state.DH5_DRing,
+            //discharge Seal
+            DH1_Seal: this.state.DH1_Seal,
+            DH2_Seal: this.state.DH2_Seal,
+            DH3_Seal: this.state.DH3_Seal,
+            DH4_Seal: this.state.DH4_Seal,
+            DH5_Seal: this.state.DH5_Seal,
             //suciton valve
             SH1_valve: this.state.SH1_valve,
             SH2_valve: this.state.SH2_valve,
@@ -416,12 +416,12 @@ class addMaint extends React.Component {
             SH3_seat: this.state.SH3_seat,
             SH4_seat: this.state.SH4_seat,
             SH5_seat: this.state.SH5_seat,
-            //suction DRing
-            SH1_DRing: this.state.SH1_DRing,
-            SH2_DRing: this.state.SH2_DRing,
-            SH3_DRing: this.state.SH3_DRing,
-            SH4_DRing: this.state.SH4_DRing,
-            SH5_DRing: this.state.SH5_DRing,
+            //suction Seal
+            SH1_Seal: this.state.SH1_Seal,
+            SH2_Seal: this.state.SH2_Seal,
+            SH3_Seal: this.state.SH3_Seal,
+            SH4_Seal: this.state.SH4_Seal,
+            SH5_Seal: this.state.SH5_Seal,
             //packing
             SH1_packing: this.state.SH1_packing,
             SH2_packing: this.state.SH2_packing,
@@ -468,14 +468,14 @@ class addMaint extends React.Component {
                 <input type = 'Checkbox' placeholder = 'DH4_seat' onChange = {this.handleDH4_seatChange} />
                 <input type = 'Checkbox' placeholder = 'DH5_seat' onChange = {this.handleDH5_seatChange} />
                 </h3>
-                {/* discharge DRing */}
+                {/* discharge Seal */}
                 <br></br>
-                <h3>Discharge D-Rings
-                <input type = 'Checkbox' placeholder = 'DH1_DRing' onChange = {this.handleDH1_DRingChange} />
-                <input type = 'Checkbox' placeholder = 'DH2_DRing' onChange = {this.handleDH2_DRingChange} />
-                <input type = 'Checkbox' placeholder = 'DH3_DRing' onChange = {this.handleDH3_DRingChange} />
-                <input type = 'Checkbox' placeholder = 'DH4_DRing' onChange = {this.handleDH4_DRingChange} />
-                <input type = 'Checkbox' placeholder = 'DH5_DRing' onChange = {this.handleDH5_DRingChange} />
+                <h3>Discharge Seals
+                <input type = 'Checkbox' placeholder = 'DH1_Seal' onChange = {this.handleDH1_SealChange} />
+                <input type = 'Checkbox' placeholder = 'DH2_Seal' onChange = {this.handleDH2_SealChange} />
+                <input type = 'Checkbox' placeholder = 'DH3_Seal' onChange = {this.handleDH3_SealChange} />
+                <input type = 'Checkbox' placeholder = 'DH4_Seal' onChange = {this.handleDH4_SealChange} />
+                <input type = 'Checkbox' placeholder = 'DH5_Seal' onChange = {this.handleDH5_SealChange} />
                 </h3>
                 {/* suction valve */}
                 <br></br>
@@ -495,14 +495,14 @@ class addMaint extends React.Component {
                 <input type = 'Checkbox' placeholder = 'SH4_seat' onChange = {this.handleSH4_seatChange} />
                 <input type = 'Checkbox' placeholder = 'SH5_seat' onChange = {this.handleSH5_seatChange} />
                 </h3>
-                {/* suction DRing */}
+                {/* suction Seal */}
                 <br></br>
-                <h3>Suction D-Rings
-                <input type = 'Checkbox' placeholder = 'SH1_DRing' onChange = {this.handleSH1_DRingChange} />
-                <input type = 'Checkbox' placeholder = 'SH2_DRing' onChange = {this.handleSH2_DRingChange} />
-                <input type = 'Checkbox' placeholder = 'SH3_DRing' onChange = {this.handleSH3_DRingChange} />
-                <input type = 'Checkbox' placeholder = 'SH4_DRing' onChange = {this.handleSH4_DRingChange} />
-                <input type = 'Checkbox' placeholder = 'SH5_DRing' onChange = {this.handleSH5_DRingChange} />
+                <h3>Suction Seals
+                <input type = 'Checkbox' placeholder = 'SH1_Seal' onChange = {this.handleSH1_SealChange} />
+                <input type = 'Checkbox' placeholder = 'SH2_Seal' onChange = {this.handleSH2_SealChange} />
+                <input type = 'Checkbox' placeholder = 'SH3_Seal' onChange = {this.handleSH3_SealChange} />
+                <input type = 'Checkbox' placeholder = 'SH4_Seal' onChange = {this.handleSH4_SealChange} />
+                <input type = 'Checkbox' placeholder = 'SH5_Seal' onChange = {this.handleSH5_SealChange} />
                 </h3>
                 {/* suction packing */}
                 <br></br>

@@ -2,13 +2,14 @@ import React, { Component } from "react";
 import Form from 'react-bootstrap/Form'
 import Button from 'react-bootstrap/Button'
 import { Container } from "../components/Grid";
-// import Bootstrap from "react-bootstrap";
-// import Jumbotron from "../components/Jumbotron";
-// import DeleteBtn from "../components/DeleteBtn";
-// import API from "../../utils/API";
-// import { Col, Row, Container } from "../components/Grid";
-// import { List, ListItem } from "../components/List";
-// import { Input, TextArea, FormBtn } from "../components/Form";
+import Bootstrap from "react-bootstrap";
+import Jumbotron from "../components/Jumbotron";
+import DeleteBtn from "../components/DeleteBtn";
+import API from "../utils/API";
+import { List, ListItem } from "../components/List";
+import { Input, TextArea, FormBtn } from "../components/Form";
+import { Navbar, Nav } from 'react-bootstrap';
+
 export default class Login extends Component {
   constructor(props) {
     super(props);
@@ -31,6 +32,11 @@ export default class Login extends Component {
 
   handleSubmit = event => {
     event.preventDefault();
+    if (this.state.email === 'test@gmail.com' && this.state.password === '123456' ){
+      return "Logged in"
+
+    }
+
   }
 
   render() {
@@ -38,7 +44,7 @@ export default class Login extends Component {
       <div className="Login">
       <Container>
         <Form onSubmit={this.handleSubmit}>
-          <Form.Group controlId="email" bsSize="large">
+          <Form.Group controlId="email" >
             <Form.Control
               autoFocus
               type="email"
@@ -46,7 +52,7 @@ export default class Login extends Component {
               onChange={this.handleChange}
               />
           </Form.Group>
-          <Form.Group controlId="password" bsSize="large">
+          <Form.Group controlId="password" >
             <Form.Control
               value={this.state.password}
               onChange={this.handleChange}
@@ -55,7 +61,6 @@ export default class Login extends Component {
           </Form.Group>
           <Button
             block
-            bsSize="large"
             disabled={!this.validateForm()}
             type="submit"
             >

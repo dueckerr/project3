@@ -9,10 +9,10 @@ class Inventory extends Component {
   state = {
       //parts
       parts:[],
-      valve: 50,
+      valve: 0,
       seat: 0,
       plunger: 0,
-      DRing: 0,
+      Seal: 0,
 
   }
 
@@ -24,7 +24,13 @@ class Inventory extends Component {
   loadparts = () => {
     API.GetParts()
     .then(res =>
-      this.setState({parts:res.data})
+      this.setState({parts:res.data,
+        valve: res.data.stock,
+        seat: res.data.stock,
+        Seal: res.data.stock,
+        packing: res.data.stock,
+        plunger: res.data.stock
+            })
       )
       .catch(err => console.log(err));
   };
@@ -38,6 +44,18 @@ class Inventory extends Component {
   handleValveUpdate = () => {
     this.setState({valve: this.state.valve })
   }
+  handleseatUpdate = () => {
+    this.setState({seat: this.state.seat })
+  }
+  handleSealUpdate = () => {
+    this.setState({Seal: this.state.Seal })
+  }
+  handlepackingUpdate = () => {
+    this.setState({packing: this.state.packing })
+  }
+  handleplungerUpdate = () => {
+    this.setState({plunger: this.state.plunger })
+  }
 
   handleFormSubmit = (e) => {
       (e).preventDefault();
@@ -46,7 +64,7 @@ class Inventory extends Component {
       //   API.EditStock({
       //     Valve: this.state.Valve,
       //     Seat: this.state.Seat,
-      //     DRing: this.state.DRing
+      //     Seal: this.state.Seal
       //   })
       //     .then(res => this.loadBooks())
       //     .catch(err => console.log(err));
@@ -63,19 +81,19 @@ class Inventory extends Component {
       <form onSubmit = {this.handleFormSubmit}>
                 <label>
                 Valves:  -
-                <input type="number" name="name" onChange = {this.handleValveUpdate}/>
+                <input type="number" name="valve" onChange = {this.handleValveUpdate}/>
                 <br/>
-                {/* Seats:   -
-                <input type="number" name="name" onChange = {this.setState.seat} />
+                Seats:   -
+                <input type="number" name="seat" onChange = {this.handleseatUpdate} />
                 <br/>
-                D-Rings: -
-                <input type="number" name="name" onChange = {this.setState.plunger} />
+                Seal: -
+                <input type="number" name="Seal" onChange = {this.handleSealUpdate} />
                 <br/>
                 Packing: -
-                <input type="number" name="name" onChange = {this.setState.DRing} />
+                <input type="number" name="packing" onChange = {this.handlepackingUpdate} />
                 <br/>
                 Plungers: -
-              <input type="number" name="name" onChange = {this.setState.packing}/> */}
+              <input type="number" name="plunger" onChange = {this.handleplungerUpdate}/>
                 <br/>
                 </label>
                 <br/>

@@ -6,7 +6,6 @@ import TableBody from '@material-ui/core/TableBody';
 import TableCell from '@material-ui/core/TableCell';
 import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
-import Paper from '@material-ui/core/Paper';
 import API from "../../utils/API";
 
 // import MaintAPI from './utils';
@@ -57,7 +56,7 @@ class MaintLogs extends Component {
             <TableCell align="right">Pump Strokes</TableCell>
             <TableCell align="right">Valves</TableCell>
             <TableCell align="right">Seats</TableCell>
-            <TableCell align="right">D-Rings</TableCell>
+            <TableCell align="right">Seal</TableCell>
             <TableCell align="right">Packing</TableCell>
             <TableCell align="right">Plungers</TableCell>
           </TableRow>
@@ -70,7 +69,7 @@ class MaintLogs extends Component {
               <TableCell align="right">{maintenance_logs.stroke_range}</TableCell>
               <TableCell align="right">{maintenance_logs.valve_used}</TableCell>
               <TableCell align="right">{maintenance_logs.seat_used}</TableCell>
-              <TableCell align="right">{maintenance_logs.DRing_used}</TableCell>
+              <TableCell align="right">{maintenance_logs.Seal_used}</TableCell>
               <TableCell align="right">{maintenance_logs.packing_used}</TableCell>
               <TableCell align="right">{maintenance_logs.plunger_used}</TableCell>
             </TableRow>

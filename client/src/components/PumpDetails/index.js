@@ -44,12 +44,12 @@ class PumpDetails extends Component {
   // DH3_seat: '',
   // DH4_seat: '',
   // DH5_seat: '',
-  // //discharge DRing
-  // DH1_DRing: '',
-  // DH2_DRing: '',
-  // DH3_DRing: '',
-  // DH4_DRing: '',
-  // DH5_DRing: '',
+  // //discharge Seal
+  // DH1_Seal: '',
+  // DH2_Seal: '',
+  // DH3_Seal: '',
+  // DH4_Seal: '',
+  // DH5_Seal: '',
   // //suciton valve
   // SH1_valve: '',
   // SH2_valve: '',
@@ -62,12 +62,12 @@ class PumpDetails extends Component {
   // SH3_seat: '',
   // SH4_seat: '',
   // SH5_seat: '',
-  // //suction DRing
-  // SH1_DRing: '',
-  // SH2_DRing: '',
-  // SH3_DRing: '',
-  // SH4_DRing: '',
-  // SH5_DRing: '',
+  // //suction Seal
+  // SH1_Seal: '',
+  // SH2_Seal: '',
+  // SH3_Seal: '',
+  // SH4_Seal: '',
+  // SH5_Seal: '',
   // //packing
   // SH1_packing: '',
   // SH2_packing: '',
@@ -117,12 +117,12 @@ class PumpDetails extends Component {
   //           let DH3_seat = 0;
   //           let DH4_seat = 0;
   //           let DH5_seat = 0;
-  //           //discharge DRing
-  //           let DH1_DRing = 0;
-  //           let DH2_DRing = 0;
-  //           let DH3_DRing = 0;
-  //           let DH4_DRing = 0;
-  //           let DH5_DRing = 0;
+  //           //discharge Seal
+  //           let DH1_Seal = 0;
+  //           let DH2_Seal = 0;
+  //           let DH3_Seal = 0;
+  //           let DH4_Seal = 0;
+  //           let DH5_Seal = 0;
   //           //suciton valve
   //           let SH1_valve = 0;
   //           let SH2_valve = 0;
@@ -135,12 +135,12 @@ class PumpDetails extends Component {
   //           let SH3_seat = 0;
   //           let SH4_seat = 0;
   //           let SH5_seat = 0;
-  //           //suction DRing
-  //           let SH1_DRing = 0;
-  //           let SH2_DRing = 0;
-  //           let SH3_DRing = 0;
-  //           let SH4_DRing = 0;
-  //           let SH5_DRing = 0;
+  //           //suction Seal
+  //           let SH1_Seal = 0;
+  //           let SH2_Seal = 0;
+  //           let SH3_Seal = 0;
+  //           let SH4_Seal = 0;
+  //           let SH5_Seal = 0;
   //           //packing
   //           let SH1_packing = 0;
   //           let SH2_packing = 0;
@@ -164,12 +164,12 @@ class PumpDetails extends Component {
   //  if (DH3_seat === true) this.setState.DH3_seat = logs.data.stroke_range;
   //  if (DH4_seat === true) this.setState.DH4_seat = logs.data.stroke_range;
   //  if (DH5_seat === true) this.setState.DH5_seat = logs.data.stroke_range;
-  //  //discharge DRing
-  //  if (DH1_DRing === true) this.setState.DH1_DRing = logs.data.stroke_range;
-  //  if (DH2_DRing === true) this.setState.DH2_DRing = logs.data.stroke_range;
-  //  if (DH3_DRing === true) this.setState.DH3_DRing = logs.data.stroke_range;
-  //  if (DH4_DRing === true) this.setState.DH4_DRing = logs.data.stroke_range;
-  //  if (DH5_DRing === true) this.setState.DH5_DRing = logs.data.stroke_range;
+  //  //discharge Seal
+  //  if (DH1_Seal === true) this.setState.DH1_Seal = logs.data.stroke_range;
+  //  if (DH2_Seal === true) this.setState.DH2_Seal = logs.data.stroke_range;
+  //  if (DH3_Seal === true) this.setState.DH3_Seal = logs.data.stroke_range;
+  //  if (DH4_Seal === true) this.setState.DH4_Seal = logs.data.stroke_range;
+  //  if (DH5_Seal === true) this.setState.DH5_Seal = logs.data.stroke_range;
   //  //suciton valve
   //  if (SH1_valve === true) this.setState.SH1_valve = logs.data.stroke_range;
   //  if (SH2_valve === true) this.setState.SH2_valve = logs.data.stroke_range;
@@ -182,12 +182,12 @@ class PumpDetails extends Component {
   //  if (SH3_seat === true) this.setState.SH3_seat = logs.data.stroke_range;
   //  if (SH4_seat === true) this.setState.SH4_seat = logs.data.stroke_range;
   //  if (SH5_seat === true) this.setState.SH5_seat = logs.data.stroke_range;
-  //  //suction DRing
-  //  if (SH1_DRing === true) this.setState.SH1_DRing = logs.data.stroke_range;
-  //  if (SH2_DRing === true) this.setState.SH2_DRing = logs.data.stroke_range;
-  //  if (SH3_DRing === true) this.setState.SH3_DRing = logs.data.stroke_range;
-  //  if (SH4_DRing === true) this.setState.SH4_DRing = logs.data.stroke_range;
-  //  if (SH5_DRing === true) this.setState.SH5_DRing = logs.data.stroke_range;
+  //  //suction Seal
+  //  if (SH1_Seal === true) this.setState.SH1_Seal = logs.data.stroke_range;
+  //  if (SH2_Seal === true) this.setState.SH2_Seal = logs.data.stroke_range;
+  //  if (SH3_Seal === true) this.setState.SH3_Seal = logs.data.stroke_range;
+  //  if (SH4_Seal === true) this.setState.SH4_Seal = logs.data.stroke_range;
+  //  if (SH5_Seal === true) this.setState.SH5_Seal = logs.data.stroke_range;
   //  //packing
   //  if (SH1_packing === true) this.setState.SH1_packing = logs.data.stroke_range;
   //  if (SH2_packing === true) this.setState.SH2_packing = logs.data.stroke_range;
@@ -239,7 +239,7 @@ class PumpDetails extends Component {
                 </TableRow>
                 <TableRow >
                 <TableCell></TableCell>
-                <TableCell align='right'>Discharge D-Ring</TableCell>
+                <TableCell align='right'>Discharge Seal</TableCell>
                 <TableCell align="right">1000</TableCell>
                 <TableCell align="right">1000</TableCell>
                 <TableCell align="right">1000</TableCell>
@@ -266,7 +266,7 @@ class PumpDetails extends Component {
                 </TableRow>
                 <TableRow >
                 <TableCell></TableCell>
-                <TableCell align='right'>Suction D-Ring</TableCell>
+                <TableCell align='right'>Suction Seal</TableCell>
                 <TableCell align="right">1000</TableCell>
                 <TableCell align="right">1000</TableCell>
                 <TableCell align="right">1000</TableCell>

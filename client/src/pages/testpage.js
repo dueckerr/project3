@@ -3,7 +3,7 @@ import ValveMaint from "../components/Valves"
 import PackingMaint from "../components/PackingMaint"
 import PlungerMaint from "../components/PlungerMaint"
 import SeatMaint from "../components/SeatMaint"
-import DRingMaint from "../components/DRingMaint"
+import SealMaint from "../components/SealMaint"
 import axios from 'axios';
 
 
@@ -14,7 +14,7 @@ class addMaintLog extends React.Component {
         stroke_range: '',
         valve_used: 0,
         seat_used: 0,
-        DRing_used: 0,
+        Seal_used: 0,
         packing_used: 0,
         plunger_used: 0,
         //discharge valve
@@ -29,12 +29,12 @@ class addMaintLog extends React.Component {
         DH3_seat: false,
         DH4_seat: false,
         DH5_seat: false,
-        //discharge DRing
-        DH1_DRing: false,
-        DH2_DRing: false,
-        DH3_DRing: false,
-        DH4_DRing: false,
-        DH5_DRing: false,
+        //discharge Seal
+        DH1_Seal: false,
+        DH2_Seal: false,
+        DH3_Seal: false,
+        DH4_Seal: false,
+        DH5_Seal: false,
         //suciton valve
         SH1_valve: false,
         SH2_valve: false,
@@ -47,12 +47,12 @@ class addMaintLog extends React.Component {
         SH3_seat: false,
         SH4_seat: false,
         SH5_seat: false,
-        //suction DRing
-        SH1_DRing: false,
-        SH2_DRing: false,
-        SH3_DRing: false,
-        SH4_DRing: false,
-        SH5_DRing: false,
+        //suction Seal
+        SH1_Seal: false,
+        SH2_Seal: false,
+        SH3_Seal: false,
+        SH4_Seal: false,
+        SH5_Seal: false,
         //packing
         SH1_packing: false,
         SH2_packing: false,
@@ -148,38 +148,38 @@ class addMaintLog extends React.Component {
     //         seat_used: prevState.seat_used + 1
     //     })); 
     // }
-    // // discharge DRing    // discharge DRing
-    // // discharge DRing
-    // // discharge DRing
+    // // discharge Seal    // discharge Seal
+    // // discharge Seal
+    // // discharge Seal
 
-    // handleDH1_DRingChange = (e) => {
-    //     this.setState({ DH1_DRing: true })
+    // handleDH1_SealChange = (e) => {
+    //     this.setState({ DH1_Seal: true })
     //     this.setState((prevState, props) => ({
-    //         DRing_used: prevState.DRing_used + 1
+    //         Seal_used: prevState.Seal_used + 1
     //     })); 
     // }
-    // handleDH2_DRingChange = (e) => {
-    //     this.setState({ DH2_DRing: true })
+    // handleDH2_SealChange = (e) => {
+    //     this.setState({ DH2_Seal: true })
     //     this.setState((prevState, props) => ({
-    //         DRing_used: prevState.DRing_used + 1
+    //         Seal_used: prevState.Seal_used + 1
     //     })); 
     // }
-    // handleDH3_DRingChange = (e) => {
-    //     this.setState({ DH3_DRing: true })
+    // handleDH3_SealChange = (e) => {
+    //     this.setState({ DH3_Seal: true })
     //     this.setState((prevState, props) => ({
-    //         DRing_used: prevState.DRing_used + 1
+    //         Seal_used: prevState.Seal_used + 1
     //     })); 
     // }
-    // handleDH4_DRingChange = (e) => {
-    //     this.setState({ DH4_DRing: true })
+    // handleDH4_SealChange = (e) => {
+    //     this.setState({ DH4_Seal: true })
     //     this.setState((prevState, props) => ({
-    //         DRing_used: prevState.DRing_used + 1
+    //         Seal_used: prevState.Seal_used + 1
     //     })); 
     // }
-    // handleDH5_DRingChange = (e) => {
-    //     this.setState({ DH5_DRing: true })
+    // handleDH5_SealChange = (e) => {
+    //     this.setState({ DH5_Seal: true })
     //     this.setState((prevState, props) => ({
-    //         DRing_used: prevState.DRing_used + 1
+    //         Seal_used: prevState.Seal_used + 1
     //     })); 
     // }
     // // suction valve
@@ -251,38 +251,38 @@ class addMaintLog extends React.Component {
     //     })); 
     // }
 
-    // // suction DRing
-    // // suction DRing
-    // // suction DRing
+    // // suction Seal
+    // // suction Seal
+    // // suction Seal
 
-    // handleSH1_DRingChange = (e) => {
-    //     this.setState({ SH1_DRing: true })
+    // handleSH1_SealChange = (e) => {
+    //     this.setState({ SH1_Seal: true })
     //     this.setState((prevState, props) => ({
-    //         DRing_used: prevState.DRing_used + 1
+    //         Seal_used: prevState.Seal_used + 1
     //     })); 
     // }
-    // handleSH2_DRingChange = (e) => {
-    //     this.setState({ SH2_DRing: true })
+    // handleSH2_SealChange = (e) => {
+    //     this.setState({ SH2_Seal: true })
     //     this.setState((prevState, props) => ({
-    //         DRing_used: prevState.DRing_used + 1
+    //         Seal_used: prevState.Seal_used + 1
     //     })); 
     // }
-    // handleSH3_DRingChange = (e) => {
-    //     this.setState({ SH3_DRing: true })
+    // handleSH3_SealChange = (e) => {
+    //     this.setState({ SH3_Seal: true })
     //     this.setState((prevState, props) => ({
-    //         DRing_used: prevState.DRing_used + 1
+    //         Seal_used: prevState.Seal_used + 1
     //     })); 
     // }
-    // handleSH4_DRingChange = (e) => {
-    //     this.setState({ SH4_DRing: true })
+    // handleSH4_SealChange = (e) => {
+    //     this.setState({ SH4_Seal: true })
     //     this.setState((prevState, props) => ({
-    //         DRing_used: prevState.DRing_used + 1
+    //         Seal_used: prevState.Seal_used + 1
     //     })); 
     // }
-    // handleSH5_DRingChange = (e) => {
-    //     this.setState({ SH5_DRing: true })
+    // handleSH5_SealChange = (e) => {
+    //     this.setState({ SH5_Seal: true })
     //     this.setState((prevState, props) => ({
-    //         DRing_used: prevState.DRing_used + 1
+    //         Seal_used: prevState.Seal_used + 1
     //     })); 
     // }
     // // packing
@@ -370,7 +370,7 @@ render() {
         <input type = 'Text' placeholder = 'Pump Strokes' onChange = {this.handlepumpStrokesChange} /> 
             <ValveMaint onSubmit={this.setState}/>
             <SeatMaint onSubmit={this.setState}/>
-            <DRingMaint onSubmit={this.setState}/>
+            <SealMaint onSubmit={this.setState}/>
             <PackingMaint onSubmit={this.setState}/>
             <PlungerMaint onSubmit={this.setState}/>
         <br></br>
