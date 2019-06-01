@@ -11,9 +11,9 @@ function TopNav() {
       <Nav.Link href="/maintenance_logs">Maintenance Logs</Nav.Link>
       <Nav.Link href="/inventory">Inventory</Nav.Link>
       <Nav.Link href="/pump_maint">Pump Maintenance</Nav.Link>
-      <Nav.Link href="/units_on-site">Units On Location</Nav.Link>
+      {/* <Nav.Link href="/units_on-site">Units On Location</Nav.Link> */}
       <Nav.Link href="/addMaint">Add Maintenance</Nav.Link>
-      <Nav.Link href="/testpage">test</Nav.Link>
+      {/* <Nav.Link href="/testpage">test</Nav.Link> */}
       <Nav.Link href="/Login">Login</Nav.Link>
 
     </Nav>
