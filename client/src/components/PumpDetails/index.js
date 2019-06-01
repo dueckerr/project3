@@ -239,7 +239,7 @@ class PumpDetails extends Component {
                 </TableRow>
                 <TableRow >
                 <TableCell></TableCell>
-                <TableCell align='right'>Discharge Seal</TableCell>
+                <TableCell align='right'>Discharge D-Ring</TableCell>
                 <TableCell align="right">1000</TableCell>
                 <TableCell align="right">1000</TableCell>
                 <TableCell align="right">1000</TableCell>
@@ -266,7 +266,7 @@ class PumpDetails extends Component {
                 </TableRow>
                 <TableRow >
                 <TableCell></TableCell>
-                <TableCell align='right'>Suction Seal</TableCell>
+                <TableCell align='right'>Suction D-Ring</TableCell>
                 <TableCell align="right">1000</TableCell>
                 <TableCell align="right">1000</TableCell>
                 <TableCell align="right">1000</TableCell>

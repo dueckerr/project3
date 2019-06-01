@@ -23,7 +23,7 @@ module.exports = function(sequelize, DataTypes) {
         type: DataTypes.INTEGER,
         defaultValue: null,
       },
-      DRing_used: {
+      Seal_used: {
         type: DataTypes.INTEGER,
         defaultValue: null,
       },
@@ -77,24 +77,24 @@ module.exports = function(sequelize, DataTypes) {
         type: DataTypes.BOOLEAN,
         defaultValue: false,
       },
-      // discharge Dring
-      DH1_DRing: {
+      // discharge Seal
+      DH1_Seal: {
         type: DataTypes.BOOLEAN,
         defaultValue: false,
       },
-      DH2_DRing: {
+      DH2_Seal: {
         type: DataTypes.BOOLEAN,
         defaultValue: false,
       },
-      DH3_DRing: {
+      DH3_Seal: {
         type: DataTypes.BOOLEAN,
         defaultValue: false,
       },
-      DH4_DRing: {
+      DH4_Seal: {
         type: DataTypes.BOOLEAN,
         defaultValue: false,
       },
-      DH5_DRing: {
+      DH5_Seal: {
         type: DataTypes.BOOLEAN,
         defaultValue: false,
       },
@@ -140,24 +140,24 @@ module.exports = function(sequelize, DataTypes) {
         type: DataTypes.BOOLEAN,
         defaultValue: false,
       },
-      // suction dring
-      SH1_DRing: {
+      // suction Seal
+      SH1_Seal: {
         type: DataTypes.BOOLEAN,
         defaultValue: false,
       },
-      SH2_DRing: {
+      SH2_Seal: {
         type: DataTypes.BOOLEAN,
         defaultValue: false,
       },
-      SH3_DRing: {
+      SH3_Seal: {
         type: DataTypes.BOOLEAN,
         defaultValue: false,
       },
-      SH4_DRing: {
+      SH4_Seal: {
         type: DataTypes.BOOLEAN,
         defaultValue: false,
       },
-      SH5_DRing: {
+      SH5_Seal: {
         type: DataTypes.BOOLEAN,
         defaultValue: false,
       },
