@@ -1,10 +1,13 @@
 import React from "react";
 import PumpDetails from "../components/PumpDetails"
+import { Container } from "../components/Grid";
 
  
 function UOS() {
   return (
- <PumpDetails />
+    <Container>
+      <PumpDetails />
+    </Container>
   );
 }
 

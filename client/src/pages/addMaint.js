@@ -1,6 +1,7 @@
 import React from "react";
 import axios from 'axios';
 import API from "../utils/API";
+import { Container } from "../components/Grid";
 
 
 
@@ -441,7 +442,9 @@ class addMaint extends React.Component {
     }
     render()
     {
+        
         return (
+            <Container>
             <form onSubmit = {this.handleSubmit}>
                 <input type = 'Text' placeholder = 'Unit ID' onChange = {this.handleUnitIdChange} />
                 <input type = 'Text' placeholder = 'Pump Strokes' onChange = {this.handlepumpStrokesChange} />
@@ -525,6 +528,7 @@ class addMaint extends React.Component {
                 <button type = 'submit'value="Submit"/>
                 </h4>
             </form>
+        </Container>
       );
     }
 }

@@ -8,8 +8,11 @@ import UOS from './pages/units_on-site';
 import PM from './pages/pump_maint';
 import addMaintlog from './pages/addMaint';
 import AddMaint from './pages/testpage';
+import Login from './pages/Login';
+
 
 import axios from 'axios';
+import { Container } from 'react-bootstrap';
 
 // class App extends Component {
 //   state = {
@@ -32,6 +35,7 @@ import axios from 'axios';
 //   }
   function App () {
     return (
+
       <Router>
       <div>
         <h1>FIM Solutions</h1>
@@ -43,6 +47,8 @@ import axios from 'axios';
           <Route exact path="/units_on-site" component={UOS} />
           <Route exact path="/addMaint" component={addMaintlog} />
           <Route exact path="/testpage" component={AddMaint} />
+          <Route exact path="/Login" component={Login} />
+
         </Switch>
       </div>
     </Router>

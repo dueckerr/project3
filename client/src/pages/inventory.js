@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import InventoryTable from "../components/inventoryTable"
 // import AddParts from "../components/AddParts";
 import API from "../utils/API";
+import { Container } from '../components/Grid';
 
 class Inventory extends Component {
     
@@ -55,6 +56,8 @@ class Inventory extends Component {
   render () {
     return (
     <div>
+      <Container>
+
       <InventoryTable />
       <br></br>
       <form onSubmit = {this.handleFormSubmit}>
@@ -72,12 +75,13 @@ class Inventory extends Component {
                 <input type="number" name="name" onChange = {this.setState.DRing} />
                 <br/>
                 Plungers: -
-                <input type="number" name="name" onChange = {this.setState.packing}/> */}
+              <input type="number" name="name" onChange = {this.setState.packing}/> */}
                 <br/>
                 </label>
                 <br/>
                 <input type="submit" value="Submit" />
             </form>
+              </Container>
     </div>
   );
 }

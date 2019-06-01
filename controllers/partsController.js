@@ -17,8 +17,8 @@ module.exports = {
     put: function(req, res) {
         db.parts
         .update(
-            {stock: stock - req.body.stock}, {
-                where: {parts_id: req.body.parts_id}
+            {stock: req.body.stock}, 
+            {where: {parts_id: req.body.parts_id}
             })
         .then(dbparts => res.json(dbparts))
         .catch(err => res.status(422).json(err));
