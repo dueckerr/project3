@@ -205,11 +205,12 @@ class PumpDetails extends Component {
 
   render() {
     return (
+      <div>
         <Paper>
           <Table>
             <TableHead>
               <TableRow>
-              <TableCell> Unit Number</TableCell>
+              <TableCell> Unit Number 1 </TableCell>
                 <TableCell align="right">Parts</TableCell>
                 <TableCell align="right">Hole 1</TableCell>
                 <TableCell align="right">Hole 2</TableCell>
@@ -223,82 +224,171 @@ class PumpDetails extends Component {
                 <TableCell></TableCell>
                 <TableCell align='right'>Discharge Valves</TableCell>
                 <TableCell align="right">9000</TableCell>
-                <TableCell align="right">1000</TableCell>
-                <TableCell align="right">1000</TableCell>
-                <TableCell align="right">1000</TableCell>
-                <TableCell align="right">1000</TableCell>
+                <TableCell align="right">9000</TableCell>
+                <TableCell align="right">9000</TableCell>
+                <TableCell align="right">9000</TableCell>
+                <TableCell align="right">9000</TableCell>
                 </TableRow>
                 <TableRow>
                 <TableCell></TableCell>
                 <TableCell align='right'>Discharge Seats</TableCell>
-                <TableCell align="right">1000</TableCell>
-                <TableCell align="right">1000</TableCell>
-                <TableCell align="right">1000</TableCell>
-                <TableCell align="right">1000</TableCell>
-                <TableCell align="right">1000</TableCell>
+                <TableCell align="right">9000</TableCell>
+                <TableCell align="right">9000</TableCell>
+                <TableCell align="right">9000</TableCell>
+                <TableCell align="right">9000</TableCell>
+                <TableCell align="right">9000</TableCell>
                 </TableRow>
                 <TableRow >
                 <TableCell></TableCell>
                 <TableCell align='right'>Discharge D-Ring</TableCell>
-                <TableCell align="right">1000</TableCell>
-                <TableCell align="right">1000</TableCell>
-                <TableCell align="right">1000</TableCell>
-                <TableCell align="right">1000</TableCell>
-                <TableCell align="right">1000</TableCell>
+                <TableCell align="right">9000</TableCell>
+                <TableCell align="right">9000</TableCell>
+                <TableCell align="right">9000</TableCell>
+                <TableCell align="right">9000</TableCell>
+                <TableCell align="right">9000</TableCell>
                 </TableRow>
                 <TableRow >
                 <TableCell></TableCell>
                 <TableCell align='right'>Suction Valves</TableCell>
-                <TableCell align="right">1000</TableCell>
-                <TableCell align="right">1000</TableCell>
-                <TableCell align="right">1000</TableCell>
-                <TableCell align="right">1000</TableCell>
-                <TableCell align="right">1000</TableCell>
+                <TableCell align="right">9000</TableCell>
+                <TableCell align="right">9000</TableCell>
+                <TableCell align="right">9000</TableCell>
+                <TableCell align="right">9000</TableCell>
+                <TableCell align="right">9000</TableCell>
                 </TableRow >
                 <TableRow >
                 <TableCell></TableCell>
                 <TableCell align='right'>Suction Seats</TableCell>
-                <TableCell align="right">1000</TableCell>
-                <TableCell align="right">1000</TableCell>
-                <TableCell align="right">1000</TableCell>
-                <TableCell align="right">1000</TableCell>
-                <TableCell align="right">1000</TableCell>
+                <TableCell align="right">9000</TableCell>
+                <TableCell align="right">9000</TableCell>
+                <TableCell align="right">9000</TableCell>
+                <TableCell align="right">9000</TableCell>
+                <TableCell align="right">9000</TableCell>
                 </TableRow>
                 <TableRow >
                 <TableCell></TableCell>
                 <TableCell align='right'>Suction D-Ring</TableCell>
-                <TableCell align="right">1000</TableCell>
-                <TableCell align="right">1000</TableCell>
-                <TableCell align="right">1000</TableCell>
-                <TableCell align="right">1000</TableCell>
-                <TableCell align="right">1000</TableCell>
+                <TableCell align="right">9000</TableCell>
+                <TableCell align="right">9000</TableCell>
+                <TableCell align="right">9000</TableCell>
+                <TableCell align="right">9000</TableCell>
+                <TableCell align="right">9000</TableCell>
                 </TableRow >
                 <TableRow >
                 <TableCell></TableCell>
                 <TableCell align='right'>Plunger</TableCell>
-                <TableCell align="right">1000</TableCell>
-                <TableCell align="right">1000</TableCell>
-                <TableCell align="right">1000</TableCell>
-                <TableCell align="right">1000</TableCell>
-                <TableCell align="right">1000</TableCell>
+                <TableCell align="right">4500</TableCell>
+                <TableCell align="right">4500</TableCell>
+                <TableCell align="right">4500</TableCell>
+                <TableCell align="right">4500</TableCell>
+                <TableCell align="right">4500</TableCell>
                 </TableRow>
                 <TableRow >
                 <TableCell></TableCell>
                 <TableCell align='right'>Packing</TableCell>
-                <TableCell align="right">1000</TableCell>
-                <TableCell align="right">1000</TableCell>
-                <TableCell align="right">1000</TableCell>
-                <TableCell align="right">1000</TableCell>
-                <TableCell align="right">1000</TableCell>
+                <TableCell align="right">4500</TableCell>
+                <TableCell align="right">4500</TableCell>
+                <TableCell align="right">4500</TableCell>
+                <TableCell align="right">4500</TableCell>
+                <TableCell align="right">4500</TableCell>
                 </TableRow>
             </TableBody>
           </Table>
         </Paper>
+
+        <br></br>
+        <Paper>
+        <Table>
+          <TableHead>
+            <TableRow>
+            <TableCell> Unit Number 2 </TableCell>
+              <TableCell align="right">Parts</TableCell>
+              <TableCell align="right">Hole 1</TableCell>
+              <TableCell align="right">Hole 2</TableCell>
+              <TableCell align="right">Hole 3</TableCell>
+              <TableCell align="right">Hole 4</TableCell>
+              <TableCell align="right">Hole 5</TableCell>
+            </TableRow>
+          </TableHead>
+          <TableBody>
+              <TableRow>
+              <TableCell></TableCell>
+              <TableCell align='right'>Discharge Valves</TableCell>
+              <TableCell align="right">9000</TableCell>
+              <TableCell align="right">1000</TableCell>
+              <TableCell align="right">1000</TableCell>
+              <TableCell align="right">1000</TableCell>
+              <TableCell align="right">1000</TableCell>
+              </TableRow>
+              <TableRow>
+              <TableCell></TableCell>
+              <TableCell align='right'>Discharge Seats</TableCell>
+              <TableCell align="right">3000</TableCell>
+              <TableCell align="right">3000</TableCell>
+              <TableCell align="right">3000</TableCell>
+              <TableCell align="right">3000</TableCell>
+              <TableCell align="right">3000</TableCell>
+              </TableRow>
+              <TableRow >
+              <TableCell></TableCell>
+              <TableCell align='right'>Discharge D-Ring</TableCell>
+              <TableCell align="right">2000</TableCell>
+              <TableCell align="right">2000</TableCell>
+              <TableCell align="right">2000</TableCell>
+              <TableCell align="right">2000</TableCell>
+              <TableCell align="right">2000</TableCell>
+              </TableRow>
+              <TableRow >
+              <TableCell></TableCell>
+              <TableCell align='right'>Suction Valves</TableCell>
+              <TableCell align="right">3000</TableCell>
+              <TableCell align="right">3000</TableCell>
+              <TableCell align="right">3000</TableCell>
+              <TableCell align="right">3000</TableCell>
+              <TableCell align="right">3000</TableCell>
+              </TableRow >
+              <TableRow >
+              <TableCell></TableCell>
+              <TableCell align='right'>Suction Seats</TableCell>
+              <TableCell align="right">3000</TableCell>
+              <TableCell align="right">3000</TableCell>
+              <TableCell align="right">3000</TableCell>
+              <TableCell align="right">3000</TableCell>
+              <TableCell align="right">3000</TableCell>
+              </TableRow>
+              <TableRow >
+              <TableCell></TableCell>
+              <TableCell align='right'>Suction D-Ring</TableCell>
+              <TableCell align="right">2000</TableCell>
+              <TableCell align="right">2000</TableCell>
+              <TableCell align="right">2000</TableCell>
+              <TableCell align="right">2000</TableCell>
+              <TableCell align="right">2000</TableCell>
+              </TableRow >
+              <TableRow >
+              <TableCell></TableCell>
+              <TableCell align='right'>Plunger</TableCell>
+              <TableCell align="right">2000</TableCell>
+              <TableCell align="right">2000</TableCell>
+              <TableCell align="right">2000</TableCell>
+              <TableCell align="right">2000</TableCell>
+              <TableCell align="right">2000</TableCell>
+              </TableRow>
+              <TableRow >
+              <TableCell></TableCell>
+              <TableCell align='right'>Packing</TableCell>
+              <TableCell align="right">1000</TableCell>
+              <TableCell align="right">1000</TableCell>
+              <TableCell align="right">1000</TableCell>
+              <TableCell align="right">1000</TableCell>
+              <TableCell align="right">1000</TableCell>
+              </TableRow>
+          </TableBody>
+        </Table>
+      </Paper>
+      </div>
       );
 }
-
-
-
 };
 
 export default withStyles(styles)(PumpDetails);

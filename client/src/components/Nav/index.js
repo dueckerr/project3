@@ -15,6 +15,8 @@ function TopNav() {
       <Nav.Link href="/addMaint">Add Maintenance</Nav.Link>
       {/* <Nav.Link href="/testpage">test</Nav.Link> */}
       <Nav.Link href="/Login">Login</Nav.Link>
+      <Nav.Link href="/charts">charts</Nav.Link>
+
 
     </Nav>
   </Navbar.Collapse>

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import Table from '@material-ui/core/Table';
+import Paper from '@material-ui/core/Paper';
 import TableBody from '@material-ui/core/TableBody';
 import TableCell from '@material-ui/core/TableCell';
 import TableHead from '@material-ui/core/TableHead';
@@ -48,6 +49,7 @@ class MaintLogs extends Component {
   
   render() {
     return (
+      <Paper>
       <Table>
         <TableHead>
           <TableRow>
@@ -76,6 +78,8 @@ class MaintLogs extends Component {
           )}
         </TableBody>
       </Table>
+      </Paper>
+
   );
 }
 

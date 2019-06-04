@@ -9,6 +9,7 @@ import PM from './pages/pump_maint';
 import addMaintlog from './pages/addMaint';
 import AddMaint from './pages/testpage';
 import Login from './pages/Login';
+import charts from './pages/charts';
 
 
 import axios from 'axios';
@@ -48,6 +49,8 @@ import { Container } from 'react-bootstrap';
           <Route exact path="/addMaint" component={addMaintlog} />
           <Route exact path="/testpage" component={AddMaint} />
           <Route exact path="/Login" component={Login} />
+          <Route exact path="/charts" component={charts} />
+
 
         </Switch>
       </div>
