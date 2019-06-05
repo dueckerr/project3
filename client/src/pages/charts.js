@@ -35,6 +35,7 @@ export default class chart extends PureComponent {
     return (
     <div>
 <Container>
+  <br></br>
     <h3> Average Stroke Life</h3>
       <BarChart
         width={800}
